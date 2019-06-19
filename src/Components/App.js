@@ -5,30 +5,47 @@ import ImageList from "./ImageList";
 
 class App extends React.Component {
     state = {
-        images: []
+        images: [],
+        defaultImages: []
     };
 
     constructor(props) {
         super(props);
         this.onSearchSubmit = this.onSearchSubmit.bind(this);
+        this.onDefault = this.onDefault.bind(this);
     }
 
     async onSearchSubmit(term) {
         const response = await unsplash.get("/search/photos", {
             params: {
                 query: term,
-                page: 30,
-                per_page: 50
+                per_page: 500
             }
         });
         this.setState({ images: response.data.results });
+    }
+
+    async onDefault() {
+        const defaultResponse = await unsplash.get("/photos/random", {
+            params: {
+                count: 30
+            }
+        });
+
+        this.setState({ defaultImages: defaultResponse.data });
+    }
+
+    componentDidMount() {
+        this.onDefault();
     }
 
     render() {
         return (
             <div className="ui container" style={{ marginTop: "10px" }}>
                 <Searchbar onSubmit={this.onSearchSubmit} />
+
                 <ImageList images={this.state.images} />
+                <ImageList images={this.state.defaultImages} />
             </div>
         );
     }
