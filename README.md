@@ -2,8 +2,8 @@
 
 A React based Electron App to change desktop wallpaper in one click.
 <hr>
+
 ![Screenshot (215)](https://user-images.githubusercontent.com/30730696/59944748-3ad25400-9483-11e9-98e5-540dd267891f.png)
-<br>
 
 The app on start renders 30 random images but on search renders the specific image.<br>
 Just click(double click) on any image to set as wallpaper(sometimes double click because of function instance delay). SO better double click image to set it.
@@ -12,11 +12,9 @@ PhotoGrid uses [Unsplash Api](https://unsplash.com/developers) to get images and
 
 ## Download the Windows setup from [here](https://github.com/NikhilNamal17/PhotoGrid/releases)
 
-<hr>
+## To Build 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
