@@ -20,6 +20,7 @@ class App extends React.Component {
             params: {
                 query: term,
                 per_page: 500
+                // orientation: "landscape"
             }
         });
         this.setState({ images: response.data.results });
@@ -29,6 +30,7 @@ class App extends React.Component {
         const defaultResponse = await unsplash.get("/photos/random", {
             params: {
                 count: 30
+                // orientation: "landscape"
             }
         });
 
