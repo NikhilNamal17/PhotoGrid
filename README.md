@@ -1,4 +1,4 @@
-# PhotoGrid
+# [PhotoGrid](https://github.com/NikhilNamal17/PhotoGrid/releases)
 
 A React based Electron App to change desktop wallpaper in one click.
 <hr>
