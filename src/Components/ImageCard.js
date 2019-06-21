@@ -1,4 +1,5 @@
 import wall_paper from "../scripts/wallpaerLoad";
+import "./ImageList.css";
 import React from "react";
 
 class ImageCard extends React.Component {
@@ -31,6 +32,7 @@ class ImageCard extends React.Component {
         return (
             <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
                 <img
+                    className="image"
                     ref={this.imageRef}
                     src={urls.regular}
                     alt={alt_description}
