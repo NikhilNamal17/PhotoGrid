@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # [PhotoGrid](https://github.com/NikhilNamal17/PhotoGrid/releases)
 
 A React based Electron App to change desktop wallpaper in one click.
