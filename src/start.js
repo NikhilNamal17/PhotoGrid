@@ -8,12 +8,19 @@ const url = require("url");
 let mainWindow;
 
 function createWindow() {
-    mainWindow = new BrowserWindow({ width: 800, height: 600 });
+    mainWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            nodeIntegration: true
+        }
+    });
 
+    //../build/index.html
     mainWindow.loadURL(
         process.env.ELECTRON_START_URL ||
             url.format({
-                pathname: path.join(__dirname, "/../public/index.html"),
+                pathname: path.join(__dirname, "../build/index.html"),
                 protocol: "file:",
                 slashes: true
             })
