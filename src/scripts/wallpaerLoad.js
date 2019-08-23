@@ -18,6 +18,7 @@ let convertToBase64 = img => {
 let setAsBackground = event => {
     console.log("Event hai ye -> " + event.target.src);
     var image = event.target;
+    console.log("Image hai ye" + image);
     image.setAttribute("crossOrigin", "anonymous");
     image.src = event.target.src;
     let base64Image = convertToBase64(image);
