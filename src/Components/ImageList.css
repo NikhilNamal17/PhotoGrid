@@ -9,7 +9,7 @@
     width: 250px; 
 }
 
-.image:hover {
+.image-nik:hover {
   transition: all 0.3s;
   box-shadow: 0 0.3125rem 1rem 0 rgba(0, 0, 0, 0.4);
 }
