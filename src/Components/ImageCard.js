@@ -54,12 +54,12 @@ class ImageCard extends React.Component {
                         />
                     </div>
                     <div className="content">
-                        <a className="header">
+                        <div className="header">
                             Photo By: {user.first_name + user.last_name} on
                             <a href={user.links.html}> Unsplash</a>
-                        </a>
+                        </div>
 
-                        <div class="description">{alt_description}</div>
+                        <div className="description">{alt_description}</div>
                     </div>
                 </div>
             </div>
