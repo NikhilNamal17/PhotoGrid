@@ -106,7 +106,7 @@
     },
     "devDependencies": {
         "electron-builder": "^20.44.2",
-        "electron": "^5.0.4"
+        "electron": "^15.5.5"
     },
     "jest": {
         "collectCoverageFrom": [
